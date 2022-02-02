@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React,{useReducer,useEffect} from "react";
+import "./App.css";
+import Header from "./components/Header/header";
+import NavbarComponent from "./components/Navbar/navbar";
+import Layout from "./components/Layout/layout";
+import FooterComponent from "./components/Footer/footer";
+import { BrowserRouter } from "react-router-dom";
+import { FinanceContext } from "./Context/context";
+import {reducer,initialState} from "./Reducer/reducer";
 function App() {
+  const [state, dispatch] = useReducer(reducer, initialState); 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <FinanceContext.Provider value={{state,dispatch}} >
+      <BrowserRouter>
+        <div className="App">
+          <Header />
+          <NavbarComponent />
+          <Layout />
+          {/* <FooterComponent /> */}
+        </div>
+      </BrowserRouter>
+    </FinanceContext.Provider>
   );
 }
 
