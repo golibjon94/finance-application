@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/finance-application/static/css/main.8ddc774a.css",
+    "main.js": "/finance-application/static/js/main.7c36c330.js",
+    "static/js/787.ae146d51.chunk.js": "/finance-application/static/js/787.ae146d51.chunk.js",
+    "static/media/gerb.png": "/finance-application/static/media/gerb.535563356e12ea2eca15.png",
+    "index.html": "/finance-application/index.html",
+    "main.8ddc774a.css.map": "/finance-application/static/css/main.8ddc774a.css.map",
+    "main.7c36c330.js.map": "/finance-application/static/js/main.7c36c330.js.map",
+    "787.ae146d51.chunk.js.map": "/finance-application/static/js/787.ae146d51.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8ddc774a.css",
+    "static/js/main.7c36c330.js"
+  ]
+}
