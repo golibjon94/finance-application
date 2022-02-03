@@ -16,7 +16,7 @@ import Chart1 from "../Charts/chart1";
 // import PieChartComponent from "../Charts/PieChart";
 
 function Layout() {
-  const { state, dispatch } = useContext(FinanceContext);
+  const { dispatch } = useContext(FinanceContext);
   const allApps = localStorage.getItem("jamiArizalar");
   const allSums = localStorage.getItem("jamiTolovlar");
   useEffect(() => {
