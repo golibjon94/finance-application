@@ -17,8 +17,8 @@ import Chart1 from "../Charts/chart1";
 
 function Layout() {
   const { state, dispatch } = useContext(FinanceContext);
-  const allApps = JSON.parse(localStorage.getItem("jamiArizalar"));
-  const allSums = JSON.parse(localStorage.getItem("jamiTolovlar"));
+  const allApps = localStorage.getItem("jamiArizalar");
+  const allSums = localStorage.getItem("jamiTolovlar");
   useEffect(() => {
     Api({
       method: "get",
@@ -43,7 +43,7 @@ function Layout() {
           newAdd2.substring(0, 4) + "," + newAdd2.substring(4, newAdd2.length);
         const newAllPayment =
           newAdd3.substring(0, 1) + "," + newAdd3.substring(1, newAdd3.length);
-        localStorage.setItem("jamiTolovlar", JSON.stringify(newAllPayment));
+        localStorage.setItem("jamiTolovlar", newAllPayment);
       })
       .catch((err) => console.log(err.message));
     // --------------------------------------
@@ -62,7 +62,7 @@ function Layout() {
             0
           )
           .toString();
-        localStorage.setItem("jamiArizalar", JSON.stringify(allApp));
+        localStorage.setItem("jamiArizalar", allApp);
       })
       .catch((err) => console.log(err.message));
   }, []);
