@@ -1,5 +1,6 @@
 {
   "name": "finance-application",
+  "homepage": "https://golibjon94.github.io/finance-application",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,6 +10,7 @@
     "axios": "^0.25.0",
     "bootstrap": "^5.1.3",
     "chart.js": "^3.7.0",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-bootstrap": "^2.1.1",
     "react-chartjs-2": "^4.0.1",
