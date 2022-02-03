@@ -5,7 +5,6 @@ import { FinanceContext } from "../../Context/context";
 export default function InfosTable() {
     const { state } = useContext(FinanceContext);
     const { filterData, filterAppData, financeInfos, chosenInfo } = state;
-    console.log(filterData)
     const allFilappDatas =
     filterAppData.length > 0 &&
     filterAppData.reduce((a, b) => a + parseInt(b.applicationsCount), 0);

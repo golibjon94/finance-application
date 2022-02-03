@@ -5,7 +5,6 @@ import {FinanceContext} from "../../Context/context"
 const Chart1=()=> {
     const {state} = useContext(FinanceContext);
       const {filterAppData}=state;
-      console.log(filterAppData)
       const filData=filterAppData.length>0 ? filterAppData.map(item=>{
           const statusName= item.statusID==="WAITING LIST" ? "Hal bo'lishi kutilayotgan"
           : item.statusID==="PENDING APPROVAL" ? "Tasdiqni kutish bosqichida"
@@ -27,7 +26,6 @@ const Chart1=()=> {
           return newObj;
       })
       :null;
-      console.log(filData)
 
     const data = [
       {

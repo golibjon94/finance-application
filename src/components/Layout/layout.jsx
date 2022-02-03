@@ -81,7 +81,7 @@ function Layout() {
             </Card>
             <Card style={{ marginBottom: "5px" }} body>Jami Summa: {allSums} sum</Card>
             <Routes>
-              <Route path="/" element={<UzbMap />} />
+              <Route path="/finance-application" element={<UzbMap />} />
               <Route path="/regionsMap/:id" element={<RegionsMap />} />
             </Routes>
           </Col>

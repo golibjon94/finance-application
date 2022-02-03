@@ -6,7 +6,6 @@ import Table from 'react-bootstrap/Table';
 export default function ApplicationTable() {
   const { state } = useContext(FinanceContext);
   const { filterAppData } = state;
-  console.log(filterAppData);
   return (
     <Table striped bordered hover variant="success">
       <thead>
