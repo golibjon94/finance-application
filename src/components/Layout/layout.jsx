@@ -12,6 +12,7 @@ import Card from "react-bootstrap/Card";
 import InfosTable from "../Tables/infosTable";
 import ApplicationTable from "../Tables/applicationTable";
 import Chart1 from "../Charts/chart1";
+import './layout.css';
 // import PieChart from "../Charts/PieChart";
 // import PieChartComponent from "../Charts/PieChart";
 
@@ -69,7 +70,7 @@ function Layout() {
   return (
     <div>
       <Container fluid>
-        <Row className="bg-success p-3">
+        <Row className="select">
           <Col>
             <Selects />
           </Col>

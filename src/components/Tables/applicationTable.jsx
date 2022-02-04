@@ -7,7 +7,7 @@ export default function ApplicationTable() {
   const { state } = useContext(FinanceContext);
   const { filterAppData } = state;
   return (
-    <Table striped bordered hover variant="success">
+    <Table striped bordered hover variant="success" style={{marginLeft:"30px"}}>
       <thead>
         <tr>
           <th>Arizalar holati</th>
